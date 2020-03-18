@@ -15,7 +15,7 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            Welcome to Navbar
+            Welcome to Kings-Resort
             <Link to="/">
               <img src={resortlogo} alt="king's resort logo" className="logo" />
             </Link>
