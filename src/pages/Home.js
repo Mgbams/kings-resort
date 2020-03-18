@@ -12,7 +12,7 @@ export const Home = () => {
       <Hero hero="defaultHero">
         <Banner
           title="Luxurious rooms"
-          subtitle="Deluxe Kings rooms starting at £180"
+          subtitle="Deluxe Kings rooms starting at €180"
         >
           <Link to="/rooms" className="btn-primary">
             {" "}

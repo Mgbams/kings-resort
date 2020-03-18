@@ -4,10 +4,10 @@
     box-sizing: border-box;
   }
   :root {
-    --primaryColor: #af9a7d;
+    --primaryColor: yellow;
     --mainWhite: #fff;
     --offWhite: #f7f7f7;
-    --mainBlack: #222;
+    --mainBlack: rgb(119, 119, 119);
     --mainGrey: #ececec;
     --darkGrey: #cfcfcf;
     --mainTransition: all 0.3s linear;
@@ -86,7 +86,8 @@
     padding: 1rem;
     letter-spacing: var(--mainSpacing);
   }
-  /* end of globals */
+ 
+  
   /* Navbar */
   .navbar {
     position: fixed;
@@ -154,11 +155,12 @@
       padding: 0.5rem 0;
     }
   }
-  /* end of navbar */
+  
+
   /* Hero */
   .defaultHero,
   .roomsHero {
-    min-height: calc(100vh - 66px);
+    min-height: 65vh;
     background: url("./assets/images/beach3.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -208,7 +210,8 @@
       font-size: 4rem;
     }
   }
-  /* End of Banner */
+
+
   /* Title */
   .section-title {
     text-align: center;
@@ -434,7 +437,8 @@
       padding-left: 3rem;
     }
   }
-  /* end of single room*/
+  
+
   /* roomlist */
   .roomslist {
     padding: 5rem 0;
@@ -459,7 +463,8 @@
       max-width: 1170px;
     }
   }
-  /* end of roomlist */
+  
+
   /*  rooms fitler*/
   .filter-container {
     padding: 5rem 0;

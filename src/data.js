@@ -21,8 +21,8 @@ export default [
       id: "1"
     },
     fields: {
-      name: "single economy",
-      slug: "single-economy",
+      name: "chambre simple économique",
+      slug: "chambre-simple-économique",
       type: "single",
       price: 100,
       size: 200,
@@ -78,8 +78,8 @@ export default [
       id: "2"
     },
     fields: {
-      name: "single basic",
-      slug: "single-basic",
+      name: "chambre simple de base",
+      slug: "chambre-simple-de-base",
       type: "single",
       price: 150,
       size: 250,
@@ -135,9 +135,9 @@ export default [
       id: "3"
     },
     fields: {
-      name: "single standard",
-      slug: "single-standard",
-      type: "single",
+      name: "Chambre Simple",
+      slug: "chambre-simple",
+      type: "simple",
       price: 250,
       size: 300,
       capacity: 1,
@@ -145,7 +145,7 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Une chambre attribuée à une personne. Peut avoir un ou plusieurs lits. La taille ou la superficie des chambres simples se situent généralement entre 37 m² et 45 m².",
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -249,8 +249,8 @@ export default [
       id: "5"
     },
     fields: {
-      name: "double economy",
-      slug: "double-economy",
+      name: "double économie",
+      slug: "double économie",
       type: "double",
       price: 200,
       size: 300,
@@ -259,7 +259,7 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Une chambre pouvant accueillir trois personnes et équipée de trois lits jumeaux, un lit double et un lit simple ou deux lits doubles.",
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -306,8 +306,8 @@ export default [
       id: "6"
     },
     fields: {
-      name: "double basic",
-      slug: "double-basic",
+      name: "Chambre double",
+      slug: "chambre-double",
       type: "double",
       price: 250,
       size: 350,
@@ -316,7 +316,7 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Une chambre attribuée à deux personnes. Peut avoir un ou plusieurs lits. La superficie ou la superficie des chambres doubles sont généralement comprises entre 40 m² et 45 m².",
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
