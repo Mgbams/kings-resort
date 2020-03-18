@@ -591,8 +591,8 @@ export default [
       id: "11"
     },
     fields: {
-      name: "family standard",
-      slug: "family-standard",
+      name: "Chambre familiale standard",
+      slug: "chambre-familiale-standard",
       type: "family",
       price: 400,
       size: 600,
@@ -648,9 +648,9 @@ export default [
       id: "12"
     },
     fields: {
-      name: "family deluxe",
-      slug: "family-deluxe",
-      type: "family",
+      name: "Famille deluxe",
+      slug: "famille-deluxe",
+      type: "famille",
       price: 500,
       size: 700,
       capacity: 6,
@@ -705,9 +705,9 @@ export default [
       id: "13"
     },
     fields: {
-      name: "presidential",
-      slug: "presidential-room",
-      type: "presidential",
+      name: "Présidentielle",
+      slug: "chambre-présidentielle",
+      type: "présidentielle",
       price: 600,
       size: 1000,
       capacity: 10,

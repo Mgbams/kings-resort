@@ -5,7 +5,7 @@ export const RoomsList = ({rooms}) => {
     if (rooms.length === 0 ) {
         return (
             <div className='empy-search'>
-                <h3>unfortunately no room matched your search</h3>
+                <h3>malheureusement aucune chambre ne correspond à votre recherche</h3>
             </div>
         )
     }
