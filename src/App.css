@@ -170,7 +170,8 @@
     background-image: url("./assets//images/roomsHero.jpg"); 
     min-height: 60vh;
   }
-  /* End of Hero */
+  
+
   /* Banner */
   .banner {
     display: inline-block;
@@ -229,7 +230,8 @@
     margin: 0 auto;
     background: var(--primaryColor);
   }
-  /* end of Title */
+
+
   
   /* services */
   .services {
@@ -273,7 +275,8 @@
       width: 100%;
     }
   }
-  /*end of services */
+
+
   /* featured rooms */
   
   .featured-rooms {
@@ -321,7 +324,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 255, 0.637);
     color: var(--mainWhite);
     padding: 0.3rem 0.6rem 0.5rem;
     border-bottom-right-radius: 1rem;
