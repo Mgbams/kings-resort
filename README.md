@@ -95,6 +95,14 @@ import { ICON_NAME } from "react-icons/fa";
 ```
 Replace the ICON_NAME with the name of the icon you will be using.
 
+Then to place the icon in your project, you use a tag with the icon's name e.g
+
+```
+ <FaAlignRight />
+```
+From the above, i placed the icon with the name __FaAlignRight__ on my page
+
+
 ## Using CONTEXT in React With a Class based Component
 > For more information on context, visit the site below:
 [React Context](https://reactjs.org/docs/context.html)
