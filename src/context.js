@@ -10,7 +10,7 @@ const RoomConsumer = RoomContext.Consumer;
         sortedRooms: [],
         featuredRooms: [],
         loading: true,
-        type: 'all',
+        type: "all",
         capacity: 1,
         price: 0,
         minPrice: 0,
@@ -50,10 +50,13 @@ const RoomConsumer = RoomContext.Consumer;
     }
 
     handleChange = (event) => {
-        const type = event.target.type;
+        const target = event.target;
+        // const type = event.target.type;
         const name = event.target.name;
-        const value = event.target.value;
-        console.log(type, name, value);
+        const value = event.type === 'checkbox' ? target.checked: target.value;
+       this.setState ({
+           [name]:value
+       }, this.filterRooms)
     }
 
     filterRooms = () => {

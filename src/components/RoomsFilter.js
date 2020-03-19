@@ -29,7 +29,7 @@ export const RoomsFilter = ({rooms}) => {
                         name='type'
                         id='type'
                         value={type}
-                        className={handleChange}
+                        onChange={handleChange}
 
                     > {types} </select>
                 </div>
