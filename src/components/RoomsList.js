@@ -4,7 +4,7 @@ import { Room } from './Room';
 export const RoomsList = ({rooms}) => {
     if (rooms.length === 0 ) {
         return (
-            <div className='empy-search'>
+            <div className='empty-search'>
                 <h3>malheureusement aucune chambre ne correspond à votre recherche</h3>
             </div>
         )

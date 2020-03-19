@@ -14,6 +14,7 @@ import img9 from "./assets/images/room-9.jpg";
 import img10 from "./assets/images/room-10.jpg";
 import img11 from "./assets/images/room-11.jpg";
 import img12 from "./assets/images/room-12.jpg";
+import room13 from "./assets/images/room102.jpg";
 
 export default [
   {
@@ -729,7 +730,7 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+              url: room13
             }
           }
         },

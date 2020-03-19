@@ -15,7 +15,7 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            Welcome to Kings-Resort
+          Bienvenue à Kings-Resort
             <Link to="/">
               <img src={resortlogo} alt="king's resort logo" className="logo" />
             </Link>
@@ -25,10 +25,10 @@ export default class Navbar extends Component {
           </div>
           <ul className={this.state.isOpen?"nav-links show-nav": "nav-links"}>
             <li>
-                <Link to="/"> Home </Link>
+                <Link to="/"> Accueil </Link>
             </li>
             <li>
-                <Link to="/rooms"> Rooms </Link>
+                <Link to="/rooms"> Chambres </Link>
             </li>
           </ul>
         </div>
