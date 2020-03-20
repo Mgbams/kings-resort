@@ -60,7 +60,30 @@ const RoomConsumer = RoomContext.Consumer;
     }
 
     filterRooms = () => {
-        console.log('hello');
+        let { rooms, type, capacity, price, minSize, maxSize, breakfast, pets } = this.state;
+        // get all rooms
+        let tempRooms = [...rooms];
+        // transform value
+        capacity = parseInt(capacity);
+        price = parseInt(price);
+        // filtering by type
+        if (type !== 'all') {
+            tempRooms = tempRooms.filter(room => room.type === type)
+        }
+
+        // filtering by capacity
+        if (capacity !== 1) {
+            tempRooms = tempRooms.filter(room => room.capacity >= capacity);
+        }
+
+        // filtering by price
+        tempRooms = tempRooms.filter(room => room.price <= price);
+
+
+        // change state
+        this.setState({
+            sortedRooms:tempRooms
+        })
     }
 
     render() {

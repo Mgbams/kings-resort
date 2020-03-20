@@ -161,7 +161,7 @@
   .defaultHero,
   .roomsHero {
     min-height: 65vh;
-    background: url("./assets/images/beach3.jpg") center/cover no-repeat;
+    background: url("./assets/images/hotel5") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,3 +524,4 @@
       width: 100px;
       height: auto;
   }
+  
