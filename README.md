@@ -229,4 +229,33 @@ import styled from 'styled-components'
 ```
 ${props => props.propertyname }
 ```
+## SETTING UP ENVIRONMENT VARIABLES BEFORE PUSHING TO GIT
+To save your access tokens and passwords from appearing on your git account,
+you can follow this steps:
+
+* Create a __.env.development__ file at the project root. Note, it shouldn't be in
+the __src__ folder but your project root folder
+* Open __.gitignore__ file and add __.env.development__ file you just created into it
+so it would be ignored during git push
+* In your __.env.development__ file add your access tokens and id's as shown below
+
+```
+REACT_APP_API_SPACE=yourApiIdHere
+REACT_APP_ACCESS_TOKEN=yourAccessTokenHere
+```
+Replace __yourApiIdHere__ with your ApiID and also replace __yourAccessTokenHere__ with
+your access token.
+
+* Then in your __Contentful.js__ file, add the variables defined in the __.env.development__ file
+as shown below
+
+```
+import { createClient } from 'contentful';
+
+export default createClient({
+    space: process.env.REACT_APP_API_SPACE,
+    accessToken: process.env.REACT_APP_ACCESS_TOKEN
+});
+```
+Note that i added __process.env__ before the variable names in the code above.
 
