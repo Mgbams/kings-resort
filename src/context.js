@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import items from './data';
+import Client from './Contentful';
+
+/*Client.getEntries({
+    content_type: 'kingsResort'
+})
+.then((response) => console.log(response.items))
+.catch(console.error) */
 
 const RoomContext = React.createContext();
 const RoomConsumer = RoomContext.Consumer;
@@ -20,8 +27,14 @@ const RoomConsumer = RoomContext.Consumer;
         breakfast: false,
         pets: false
     }
-    componentDidMount( ) {
-        let rooms = this.formatData(items);
+    // retieve contentfuldata
+    getContentfulData = async () => {
+        try {
+            let response = await Client.getEntries({
+                content_type: 'kingsResort',
+                order: 'fields.price'
+            });
+        let rooms = this.formatData(response.items);
         let featuredRooms = rooms.filter(room => room.featured === true);
         let maxPrice = Math.max(...rooms.map(item => item.price));
         let maxSize = Math.max(...rooms.map(item => item.size));
@@ -29,6 +42,14 @@ const RoomConsumer = RoomContext.Consumer;
             rooms, sortedRooms:rooms, featuredRooms, loading:false, price:maxPrice, maxPrice, maxSize
         })
         console.log(rooms);
+        } catch(error) {
+            console.log(error);
+        }
+    }
+    componentDidMount( ) {
+        this.getContentfulData();
+        //.......................
+        
     }
 
     formatData(items) {

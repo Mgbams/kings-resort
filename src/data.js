@@ -251,7 +251,7 @@ export default [
     },
     fields: {
       name: "double économie",
-      slug: "double économie",
+      slug: "double-économie",
       type: "double",
       price: 200,
       size: 300,
